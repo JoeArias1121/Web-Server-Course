@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <style>
+        * {
+            padding:0rem;
+            margin: 0rem;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body {
+            background-color: rgb(182, 250, 182);
+        }
+        p {
+            font-size: medium;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+        .menu {
+            background-color: rgb(45, 149, 45);
+            display: flex;
+            justify-content: start;
+            align-items: top;
+        }
+        .menu-item, .edit-tab{
+            position: relative;
+            margin:0;
+            width: 4.5rem;
+            height:2rem;
+            padding-right: 2rem;
+            padding-left: .5rem;
+        
+            display: flex;
+            align-items: center;
+            
+        }
+        #edit {
+            width: auto;
+            margin:0rem;
+            padding:0rem;
+            background-color: antiquewhite;
+        }
+        .content {
+            display: flex;
+            flex-direction: column;
+        }
+        .content-item {
+            background-color: whitesmoke;
+            margin-top: 1.5rem;
+            border-left: solid;
+            border-width: .3rem;
+            padding-bottom: 1.2rem;
+        }
+        .extra {
+            border-color: yellow;
+        }
+        .instruction {
+            border-color:darkgreen;
+        }
+        .mini-container {
+            margin: 0rem;
+            padding:.8rem;
+        }
+        .menu-item:hover, .edit-tab:hover {
+            background-color: rgb(5, 167, 5);
+            .sub-container {
+                position:absolute;
+                top:100%;
+                left:0;
+                .sub {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                        a {
+        
+                        display:flex;
+                        justify-content: start;
+                        align-items: center;
+                        background-color: rgb(5, 167, 5);
+        
+                        
+                        width: 4.5rem;
+                        padding-right: 2rem;
+                        padding-top: .4rem;
+                        padding-bottom:.2rem;
+                        padding-left: .5rem;
+        
+                        text-decoration: none;
+                        
+                    }
+                    a:hover {
+                        background-color: lawngreen;
+                    }
+                }
+            }
+        }
+        
+        .sub {
+            display:none;
+        }
+        .edit-tab {
+            background-color: rgb(45, 149, 45);
+            font-size: large;
+            padding-right: 2rem;
+            border: none;
+        }
+        input[type=button] {
+            width: 100%;
+            padding:0rem 4.5rem 0rem .5rem;
+          }
+        .edit-tab:focus {
+            background-color: rgb(5, 167, 5);
+            .edit-sub {
+                display:flex;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <div class="file menu-item">
+            <h3>File</h3>
+            <div class="sub-container">
+                <div class="file-sub sub">
+                    <a href="#"><p>New</p></a>
+                    <a href="#"><p>Open</p></a>
+                    <a href="#"><p>Save</p></a>
+                    <a href="#"><p>Print</p></a>
+                    <a href="#"><p>Close</p></a>
+                </div>
+            </div>
+        </div>
+        <div  type="button" id="edit"class="edit menu-item">
+            <input type="button" class="edit-tab" value="Edit">
+            <div class="sub-container">
+                <div class="edit-sub sub">
+                    <a href="#"><p>Undo</p></a>
+                    <a href="#"><p>Redo</p></a>
+                    <a href="#"><p>Cut</p></a>
+                    <a href="#"><p>Copy</p></a>
+                    <a href="#"><p>Paste</p></a>
+                    <a href="#"><p>Delete</p></a>
+                    <a href="#"><p>Select All</p></a>
+                </div>
+            </div>
+        </div>
+        <div class="view menu-item">
+            <h3>View</h3>
+            <div class="sub-container">
+                <div class="view-sub sub">
+                    <a href="#"><p>Zoom In</p></a>
+                    <a href="#"><p>Zoom Out</p></a>
+                    <a href="#"><p>Actual Size</p></a>
+                    <a href="#"><p>Fit Page</p></a>
+                    <a href="#"><p>Fit Width</p></a>
+                    <a href="#"><p>Fit Height</p></a>
+                    <a href="#"><p>Rotate Left</p></a>
+                    <a href="#"><p>Rotate Right</p></a>
+                    <a href="#"><p>Full Screen</p></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        
+        <div class="content">
+            <div class="instruction content-item">
+                <div class="mini-container">
+                    <h3 class="sub-header">
+                        Instructions
+                    </h3>
+                    <p class="caption">
+                       <br> Recreate this page using <strong><em>only CSS</em></strong>. Do yourself a favor and 1) Do not view the source. Figure it out yourself. 2) Do not search for the solution. Learn CSS until you know enough to do this.
+                    </p>
+                </div>
+            </div>
+            <div class="extra content-item">
+                <div class="mini-container">
+                    <h3 class="sub-header">
+                        Extra Credit
+                    </h3>
+                    <p class="caption">
+                       <br> Notice how the Edit menu (besides for not being bold) reacts to clicks. If you click the edit menu, it remains open until you click somewhere else. (This you might need to search for)
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
