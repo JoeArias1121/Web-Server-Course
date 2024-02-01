@@ -1,7 +1,6 @@
 # Hi my name is Joseph these are my goals for my Web Server Programming course
 
-![A picture of me](![Screenshot 2024-01-25 122540](https://github.com/JoeArias1121/Web-Server-Course/assets/96800288/fa4723e8-3aac-4ee2-a2b8-00c437fe8b46)
-)
+![A picture of me](!me.png)
 
 Hi my name is Joseph Arias I am a computer science major and I have taken discrete
 math, discrete and continuous algorithms, and operating systems. I am currently collaborating on
