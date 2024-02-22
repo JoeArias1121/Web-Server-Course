@@ -1,0 +1,32 @@
+apparently vite is a scaffolder
+created by the creator of vue (platform agnostic)"works super well with react as well"
+for React Next is useful (search why)
+Pinia good but often times not needed
+Unit testing (every individual functions...)very important 
+End to end testing (Cypress)very important
+ESLint (for code quality catches stupid errors helps with consistency) a lot less important with  TypeScript
+
+installed recommended vscode extensions in client/.vscode and also vue snippet tool by Lettuce
+
+public for static files
+
+only one gitignore (we have a monorepo) -- eventually we will have 3 or more npm projects
+
+typescript env.d.ts (definitions not real code "labels" maybe)
+
+hot module replacement ( HMR)
+
+tsconfig will be editted later on
+
+to run commands after (then) you have to cd into client to install packages from package.json since the one you want to download is in client
+commands used =>
+
+npm create vite@latest 
+
+then =>
+
+cd client
+npm install "or" npm i
+npm run dev // it is to constantly update page and run it
+
+(variant chosen was custom)
