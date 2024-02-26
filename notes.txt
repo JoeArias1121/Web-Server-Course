@@ -30,3 +30,25 @@ npm install "or" npm i
 npm run dev // it is to constantly update page and run it
 
 (variant chosen was custom)
+
+2/26/24
+
+commands used =>
+
+cd client
+
+npm run build // does type checking and shows you all the errors helps debugn
+
+npm run preview //  this opens up your app in browser fully compiled version
+
+npm run dev // updates changes automatically to app
+
+----------------------------------
+// npm run dev // does not do type checking for typescript its meant to just quick
+package.JSON outside meant for server folder not for
+
+added package.JSON // to dependencies // ^ latest features
+
+whenever you add to package.JSON run npm  install // to make sure everything is installed correctly
+
+svg version for fonts has trouble loading so go the other way
