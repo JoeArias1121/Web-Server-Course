@@ -1,3 +1,17 @@
+<script setup lan="ts">
+import { RouterLink } from 'vue-router'
+import { ref } from "vue"
+
+let isActive = ref(false)
+
+function toggleMenu() {
+  isActive.value = !isActive.value
+  //console.log({ isActive: isActive.value })
+}
+// isActive && 'is-active'  for class in button
+
+</script>
+
 <template>
     <div class="container">
 <nav class="navbar" role="navigation" aria-label="main navigation">
@@ -6,7 +20,7 @@
         <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
       </a>
   
-      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+      <a role="button" @click="toggleMenu" :class=" {'is-active': isActive} " class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>

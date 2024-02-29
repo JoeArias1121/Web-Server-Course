@@ -52,3 +52,13 @@ added package.JSON // to dependencies // ^ latest features
 whenever you add to package.JSON run npm  install // to make sure everything is installed correctly
 
 svg version for fonts has trouble loading so go the other way
+
+2/29/24 LEAP DAY!!!
+
+commands use:
+
+cd client
+
+npm run dev
+
+--------------------------------------
